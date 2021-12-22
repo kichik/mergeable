@@ -1,5 +1,14 @@
 CHANGELOG
 =====================================
+| December 12, 2021: feat: Add support for status events to baseRef validator `#395 <https://github.com/mergeability/mergeable/issues/395#issuecomment-991904249>` _
+| November 25, 2021: feat: Add more supported events to baseRef validator `#395 <https://github.com/mergeability/mergeable/issues/395#issuecomment-975763927>` _
+| November 12, 2021 : feat: Add baseRef filter `#596 <https://github.com/mergeability/mergeable/pull/596>`_
+| October 19, 2021 : feat: Add validator approval option to exclude users `#594 <https://github.com/mergeability/mergeable/pull/594>`_
+| October 12, 2021 : feat: Add boolean option for payload filter `#583 <https://github.com/mergeability/mergeable/pull/583>`_
+| September 27, 2021 : fix: use node version 14.17.6 for the release action `#591 <https://github.com/mergeability/mergeable/pull/591>`_
+| September 25, 2021 : feat: Support for objects in arrays in the payload filter `#589 <https://github.com/mergeability/mergeable/pull/589>`_
+| September 20, 2021 : fix: Check that getRouter is defined before attempting to access it `#587 <https://github.com/mergeability/mergeable/pull/587>`_
+| August 26, 2021 : fix: Await GithubAPI topics response `#585 <https://github.com/mergeability/mergeable/pull/585>`_
 | August 10, 2021 : feat: New labels API `#577 <https://github.com/mergeability/mergeable/pull/577>`_
 | August 6, 2021 : feat: Add team assignment to request_review action `#574 <https://github.com/mergeability/mergeable/pull/574>`_
 | August 6, 2021 : feat: Support must_include and must_exclude regex as an array `#575 <https://github.com/mergeability/mergeable/pull/575>`_
