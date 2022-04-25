@@ -17,7 +17,7 @@ jobs:
           node-version: 16
       - run: npm ci
       - run: npm i @probot/adapter-github-actions
-      - run: npm run build
+      #- run: npm run build
       - run: |
           echo 'const { run } = require("@probot/adapter-github-actions"); const app = require("./index"); run(app);' | node
         env:
