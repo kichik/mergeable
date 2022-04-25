@@ -12,8 +12,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          repository: mergeability/mergeable
-          ref: v2.12.1
+          ref: webhook-star-bug
+      #    repository: mergeability/mergeable
+      #    ref: v2.12.1
       - uses: actions/setup-node@v3
         with:
           cache: npm
