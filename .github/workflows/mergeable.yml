@@ -1,0 +1,24 @@
+name: Run Mergeable
+
+on:  # see subscriptions at https://mergeable.readthedocs.io/en/latest/deployment.html#
+  pull_request:
+  pull_request_review:
+  pull_request_review_comment:
+  issues:
+
+jobs:
+  mergeable:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          cache: npm
+          node-version: 16
+      - run: npm ci
+      - run: npm i @probot/adapter-github-actions
+      - run: npm run build
+      - run: |
+          echo 'const { run } = require("@probot/adapter-github-actions"); const app = require("./index"); run(app);' | node
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
