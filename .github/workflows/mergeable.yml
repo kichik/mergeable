@@ -10,14 +10,18 @@ jobs:
   mergeable:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+        with:
+          ref: webhook-star-bug
+      #    repository: mergeability/mergeable
+      #    ref: v2.12.1
+      - uses: actions/setup-node@v3
         with:
           cache: npm
           node-version: 16
       - run: npm ci
       - run: npm i @probot/adapter-github-actions
-      - run: npm run build
+      #- run: npm run build
       - run: |
           echo 'const { run } = require("@probot/adapter-github-actions"); const app = require("./index"); run(app);' | node
         env:

@@ -1,7 +1,12 @@
 CHANGELOG
 =====================================
-| December 12, 2021: feat: Add support for status events to baseRef validator `#395 <https://github.com/mergeability/mergeable/issues/395#issuecomment-991904249>` _
-| November 25, 2021: feat: Add more supported events to baseRef validator `#395 <https://github.com/mergeability/mergeable/issues/395#issuecomment-975763927>` _
+| April 7, 2022: feat: Support adding deployment labels from values `#631 <https://github.com/mergeability/mergeable/pull/631>`_
+| March 22, 2022: fix: pass comment instance to removeErrorComments `#626 <https://github.com/mergeability/mergeable/pull/626>`_
+| February 24, 2022: fix: correct indentation on documentation `#623 <https://github.com/mergeability/mergeable/pull/623>`_
+| February 8, 2022: feat: Allow all option on must_include and must_include inside changeset validator `#611 <https://github.com/mergeability/mergeable/pull/611>`_
+| February 6, 2022: feat: Add commit_title and commit_message options to merge action so the merge commit can be customized based on PR content `#612 <https://github.com/mergeability/mergeable/pull/612>`_
+| December 12, 2021: feat: Add support for status events to baseRef validator `#395 <https://github.com/mergeability/mergeable/issues/395#issuecomment-991904249>`_
+| November 25, 2021: feat: Add more supported events to baseRef validator `#395 <https://github.com/mergeability/mergeable/issues/395#issuecomment-975763927>`_
 | November 12, 2021 : feat: Add baseRef filter `#596 <https://github.com/mergeability/mergeable/pull/596>`_
 | October 19, 2021 : feat: Add validator approval option to exclude users `#594 <https://github.com/mergeability/mergeable/pull/594>`_
 | October 12, 2021 : feat: Add boolean option for payload filter `#583 <https://github.com/mergeability/mergeable/pull/583>`_
